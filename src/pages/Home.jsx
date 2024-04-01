@@ -11,8 +11,7 @@ import axios from 'axios'
 import toast, {Toaster} from 'react-hot-toast'
 
 function Home() {
-    const user = useSelector((state) => state.user)
-    // const dispatch = useDispatch();
+    const user = useSelector((state) => state.user)    
     const [urlLong,setUrlLong] = useState('')
             
     const [status,setStatus] = useState(false)
@@ -28,24 +27,6 @@ function Home() {
         }
 
     },[user])
-
-    // const checkLocal = () =>{
-
-    //     const usuario = localStorage.getItem('USER__URL')
-    //     const parses  =  JSON.parse(usuario)
-    //     console.log(parses)
-    // }
-
-    // const delLocal = () =>{
-
-    //     const st = {    
-    //         username:'',
-    //         token:'',    
-    //     }
-
-    //     localStorage.setItem('USER__URL',null)   
-    //     dispatch(delUser())
-    // }
 
 
 
@@ -103,7 +84,7 @@ function Home() {
             <div className='container__home'>
 
                 <div className='container__inputs'> 
-                    <input type="text" placeholder='Enter link here' className='input__link' onChange={handleUrlLong} />
+                    <input type="text" placeholder='Enter link here' className='input__link' onChange={handleUrlLong} value={urlLong} />
                     <button className='button__get__link'  onClick={() => handleSendUrl()}>Get short url</button>
                 </div>
                

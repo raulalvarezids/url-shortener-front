@@ -7,6 +7,7 @@ import { createBrowserRouter, RouterProvider} from "react-router-dom";
 import { store } from './redux/store.js'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
+import Profile from './pages/Profile.jsx'
 
 
 const router = createBrowserRouter([
@@ -20,6 +21,10 @@ const router = createBrowserRouter([
   },{
     path:'/register',
     element:<Register/>
+  },
+  {
+    path:'/profile',
+    element: <Profile/>
   }
 ]);
 
