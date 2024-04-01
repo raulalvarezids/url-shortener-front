@@ -1,0 +1,87 @@
+.tittle__home{
+    text-align: center;
+    font-size: 65px;
+}
+
+.container__home{
+    width: 80%;
+    height: 200px;    
+    margin: 0 auto;
+    margin-top: 60px;
+
+    display: flex;    
+    align-items: center;
+    flex-direction: column;
+    gap: 50px;
+    
+}
+
+.container__inputs{    
+    width: 70%; 
+    display: flex;
+    gap: 10px;   
+}
+
+.input__link{
+    width: 710px;    
+    height: 70px;
+    border-radius: 10px;
+    font-size: 18px;
+    background-color: #000037;    
+    color: #ffff;
+    padding: 10px;
+}
+
+.input__link::placeholder{
+    color: rgba(255, 255, 255, 0.766);
+}
+
+
+.button__get__link{
+    height: 70px;    
+    width: 150px;
+    border-radius: 10px;    
+    border-style: none;
+    padding: 0 10px ;
+    font-size: 18px;
+    background-color: #00005B;
+    color: #ffff;
+    cursor: pointer;
+}
+
+.container__short{    
+    width: 60%;
+    height: 65px;
+    background-color: #FFEDBF;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    padding-left: 10px;
+    justify-content: space-between;
+}
+
+.short__url__link{
+    font-size: 18px;
+    width: 90%;
+}
+
+.click__copy{   
+    font-size: 18px;
+    cursor: pointer;        
+}
+
+.click__copy__container{
+    position: relative;
+    width: 10%;
+}
+
+.click__copy::after{
+    content: "";
+    display: block;
+    background: #00005B;
+    width: 2px;    
+    height: 260%;
+    position: absolute;
+    right: 100px;    
+    top: -16px;
+}
