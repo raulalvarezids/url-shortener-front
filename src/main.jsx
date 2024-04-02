@@ -8,6 +8,7 @@ import { store } from './redux/store.js'
 import Login from './pages/Login.jsx'
 import Register from './pages/Register.jsx'
 import Profile from './pages/Profile.jsx'
+import UrlData from './components/profile/UrlData.jsx'
 
 
 const router = createBrowserRouter([
@@ -24,7 +25,17 @@ const router = createBrowserRouter([
   },
   {
     path:'/profile',
-    element: <Profile/>
+    element: <Profile/>,
+    // children:[
+    //   {
+    //     path:'/profile/:code',
+    //     element: <UrlData/>
+    //   }
+    // ]
+  },
+  {
+    path:'/profile/data/:code',
+    element:<UrlData/>
   }
 ]);
 

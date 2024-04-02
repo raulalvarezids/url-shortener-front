@@ -1,0 +1,141 @@
+.container__data__show{
+    width: 80%;        
+    /* background-color: red; */
+    height: 100%;
+}
+.back__code__container{    
+   display: flex;
+   width: 100%;
+   justify-content: space-between;
+   align-items: center;
+   /* background: green; */
+}
+
+.back__logo__profile{
+    cursor: pointer;
+}
+
+.urls__container__data{
+    max-width: 50%;    
+    height: 500px;
+    margin: 0 auto;    
+    margin-top: 80px;    
+    /* background-color: red; */
+}
+
+.code__url__data{    
+    border-color: #000037;
+    padding: 10px 25px;
+    border-right: 3px solid ;    
+    border-bottom: 3px solid ;    
+    border-radius: 10px;
+    font-size: 25px;
+}
+
+.container__delete__code{
+    display: flex;
+    gap: 30px;
+}
+
+.icon__delete{
+    width: 45px;
+    cursor: pointer;
+}
+
+.url__data__inputs{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 70px;   
+    display: flex;  
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input__with__edit{
+    display: flex;
+    gap: 10px;
+    align-items: center;    
+}
+
+.input__url{
+    outline: none;        
+    background-color: #FFEDBF;
+    border: none;
+    padding: 10px;
+    width: 80%;
+    font-size: 20px;
+    border-radius: 10px;
+}
+
+.edit__input{
+    width: 40px;
+    cursor: pointer;
+}
+
+.urllong{
+    font-size: 18px;
+}
+
+.buttons__url{
+    width: 80%;
+    margin: 0 auto;
+    margin-top: 50px;    
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+
+}
+
+.buttons__url__item{
+    background-color: #00005B;
+    color: #ffff;
+    width: 150px;
+    height: 50px;
+    border-radius: 10px;
+    font-size: 18px;
+    cursor: pointer;    
+}
+
+
+.container__loader__adata{
+    margin-top: 260px;
+}
+
+
+
+.title__container{
+    text-align: center;
+}
+
+.dialog__title{
+    
+    font-size: 25px;
+}
+
+
+.dialog__detele__container{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.dialog__acionts{
+    display: flex;
+    justify-content: space-around;
+}
+.dialog__text{
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.bt__actions{
+    background-color: #00005B;
+    color: #ffff;
+    width: 100px;
+    height: 35px;
+    border-radius: 10px;
+    font-size: 15px;
+    cursor: pointer; 
+}

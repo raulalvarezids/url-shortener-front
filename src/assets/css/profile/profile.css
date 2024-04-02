@@ -1,0 +1,22 @@
+.tittle__profile{
+    font-size: 70px;
+    width: 50%;    
+    text-align: center;
+    margin: 0 auto;
+}
+
+.out__url{
+    font-size: 60px;
+    width: 50%;    
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+
+.loader__profile{
+    width: 50%;
+    margin: 0 auto;
+    margin-top: 70px;    
+    display: flex;
+    justify-content: center;
+}
