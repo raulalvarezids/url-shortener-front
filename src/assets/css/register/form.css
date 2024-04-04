@@ -66,3 +66,31 @@
 .form__register__eye{
     width: 30px;
 }
+
+
+@media (max-width:769px) {
+    .form__title__register{
+        font-size: 50px;       
+    }    
+    
+    .container__data__register{
+        width: 350px;
+        height: 450px;                   
+        gap: 50px;
+    }
+
+}
+
+
+@media (max-width:565px) {
+    .container__data__register{
+        width: 300px;
+        height: 400px;                        
+        gap: 40px;
+    }
+
+    .form__title__register{
+        font-size: 40px;       
+    }
+}
+

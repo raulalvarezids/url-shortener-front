@@ -85,3 +85,148 @@
     right: 100px;    
     top: -16px;
 }
+
+
+@media (max-width:930px) {
+    
+    .container__home{
+        width: 100%;                        
+    }
+
+    .button__get__link{
+        height: 65px;                    
+        font-size: 15px;    
+        width: 300px;    
+        padding: 0 0;
+    }
+
+    
+}
+
+
+@media (max-width:720px) {
+    .container__short{    
+        height: 50px;
+    }
+
+    .short__url__link{        
+        font-size: 18px;        
+    }
+
+    .click__copy{   
+        font-size: 15px;        
+    }
+
+    .click__copy__container{
+        position: relative;
+        width: 12%;
+    }
+    
+    .click__copy::after{        
+        right: 55px;    
+        top: -8px;
+        height: 190%;
+    }
+
+}
+
+
+@media (max-width:625px) {
+
+    .short__url__link{        
+        font-size: 15px;        
+    }
+
+    .click__copy{   
+        font-size: 12px;        
+    }
+}
+
+
+@media (max-width:560px) {
+    .input__link{        
+        height: 50px;        
+        font-size: 12px;        
+    }
+    
+    .button__get__link{
+        height: 50px;                 
+        font-size: 12px;        
+    }
+
+    .container__short{    
+        width: 65%;
+        height: 40px;
+    }
+
+    .short__url__link{        
+        font-size: 10px;
+        width: 100%;
+    }
+
+    .click__copy{   
+        font-size: 12px;        
+    }
+
+    .click__copy__container{
+        position: relative;
+        width: 18%;
+    }
+    
+    .click__copy::after{        
+        right: 55px;    
+        top: -8px;
+        height: 190%;
+    }
+
+    .tittle__home{        
+        font-size: 50px;
+    }
+
+}   
+
+
+@media (max-width:420px) {    
+    
+    .input__link{        
+        height: 50px;        
+        font-size: 12px;        
+    }
+
+
+    .button__get__link{
+        height: 50px;                    
+        font-size: 10px;            
+    }
+
+
+    .container__short{    
+        width: 70%;
+        height: 50px;
+    }
+
+    .short__url__link{
+        font-size: 10px;
+        width: 100%;
+    }
+    .click__copy{   
+        font-size: 12px;        
+    }
+
+    .click__copy__container{
+        position: relative;
+        width: 20%;
+    }
+    
+    .click__copy::after{        
+        right: 55px;    
+        top: -12px;
+        height: 220%;
+    }
+
+    
+    .button__get__link{        
+        padding: 0 1px;
+    }
+
+}

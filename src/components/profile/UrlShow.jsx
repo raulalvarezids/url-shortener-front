@@ -5,15 +5,6 @@ import { Outlet } from "react-router-dom";
 
 
 function UlrShow(props) {
-    // const [show,setShow]= useState(true)
-
-    // useEffect(() => {          
-    //     setShow(true)
-    // },[])
-
-    // const handleShow=()=>{
-    //     setShow(!show)
-    // }
     
     return (  
 
@@ -21,10 +12,6 @@ function UlrShow(props) {
             {
                 props.urls.map(e => <Url url={e} key={e._id} />)
             }
-{/* 
-            {
-                !props.show ? <Outlet></Outlet> : null
-            } */}
             
         </div>
     );

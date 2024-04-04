@@ -66,3 +66,32 @@
 .form__login__eye{
     width: 30px;
 }
+
+
+
+@media (max-width:769px) {
+    .container__data{
+        width: 350px;
+        height: 450px;                        
+        gap: 60px;
+    }
+
+    .form__title{
+        font-size: 50px;
+       
+    }
+    
+}
+
+@media (max-width:565px) {
+    .container__data{
+        width: 300px;
+        height: 400px;                        
+        gap: 40px;
+    }
+
+    .form__title{
+        font-size: 40px;       
+    }
+}
+

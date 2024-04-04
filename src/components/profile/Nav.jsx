@@ -1,5 +1,5 @@
 import logo from '../../assets/images/url.svg'
-import '../../assets/css/profile/nav.css'
+import '../../assets/css/profile/nav__profile.css'
 import { Link } from "react-router-dom";
 import { useNavigate } from 'react-router-dom';
 

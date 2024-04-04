@@ -1,5 +1,4 @@
-.urls__container{
-    min-width: 30%;
+.urls__container{    
     max-width: 63%;  
     height: 400px;
     margin: 0 auto;
@@ -13,7 +12,7 @@
 
 .button__code{
     color: #ffff;
-    background-color: #000037;    
+    background-color: #000037;        
     width: 120px;
     height: 35px;
     border-radius: 10px;
@@ -26,3 +25,32 @@
     display: none;
 }
 
+
+@media (max-width:768px) {
+    .urls__container{    
+        max-width: 90%;   
+    }
+}
+
+
+@media (max-width:711px) {    
+    .button__code{        
+        width: 110px;      
+    }    
+}
+
+
+@media (max-width:711px) {    
+    .button__code{        
+        width: 105x;      
+    }    
+}
+
+
+
+@media (max-width:376px) {    
+   
+    .button__code{        
+        width: 100px;        
+    }        
+}

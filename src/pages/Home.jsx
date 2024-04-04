@@ -1,8 +1,4 @@
-// import { useDispatch } from 'react-redux';
 import { useSelector } from "react-redux";
-
-
-
 import { useEffect, useState } from 'react';
 import Nav from '../components/home/Nav.jsx';
 import '../assets/css/home/home.css'

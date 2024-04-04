@@ -24,3 +24,54 @@
     width: 67%;
     font-size: 65px;    
 }
+
+@media (max-width:1025px) {
+    .tittle__login{
+        width: 69%;
+        font-size: 50px;    
+    }
+    
+}
+
+@media (max-width:769px) {
+    .logo__login{
+        width: 40px;                
+    }
+    
+    .tittle__login{
+        width: 75%;
+        font-size: 50px;    
+    }        
+}
+
+
+
+@media (max-width:565px) {
+    .logo__login{
+        width: 30px;                
+    }
+    
+    .tittle__login{        
+        font-size: 40px;            
+    }  
+}
+
+
+
+@media (max-width:468px) {
+    
+    .tittle__login{        
+        font-size: 35px;    
+    }  
+}
+
+
+@media (max-width:376px) {
+    .logo__login{
+        width: 20px;                
+    }
+
+    .tittle__login{        
+        font-size: 30px;    
+    }  
+}

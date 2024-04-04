@@ -242,7 +242,7 @@ function UrlData() {
                             </div>
                             
                             
-                            <div className="input__with__edit">
+                            <div className="input__with__edit plus__copy">
                                 <input type="text" disabled={urlLongEdition} onChange={handleUrlLong} value={urlOld} className="input__url urllong"/>
                                 <img src={edit} alt=""  className="edit__input" onClick={() => handleUrlLongEditing()}/>
 
