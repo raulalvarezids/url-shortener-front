@@ -6,20 +6,30 @@ import Short from '../components/home/Short.jsx';
 import axios from 'axios'
 import toast, {Toaster} from 'react-hot-toast'
 
+import { checkToken } from "../checkToken/checkToken.js";
+import { useDispatch } from "react-redux";
+
 function Home() {
+    const dispatch = useDispatch()
     const user = useSelector((state) => state.user)    
     const [urlLong,setUrlLong] = useState('')
             
     const [status,setStatus] = useState(false)
     const [short,setShort] = useState('')    
     
-
     useEffect(()=>{        
 
         if(user.token == ''){            
             setStatus(false)
-        }else{            
-            setStatus(true)
+        }else{                        
+            const statusTime = checkToken(user.time,dispatch)                    
+            
+            if(!statusTime){                
+                setStatus(true)                          
+            }else{
+                toast.error("The session has expired", {duration:1500})                
+            }            
+            
         }
 
     },[user])
@@ -69,11 +79,11 @@ function Home() {
         <div className='home__initial'>
             <Nav status={status}/>
 
-
-            <Toaster
+<Toaster
                     position="top-center"
                     reverseOrder={false}            
             />
+           
 
             <h1 className='tittle__home' >Free Url Shortener</h1>
             

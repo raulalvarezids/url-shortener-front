@@ -23,12 +23,14 @@ import DialogContent from '@mui/material/DialogContent';
 import DialogTitle from '@mui/material/DialogTitle';
 
 
-
+import { checkToken } from '../../checkToken/checkToken'
+import { useDispatch } from 'react-redux'
 
 function UrlData() {
     let { code } = useParams();
     const user = useSelector((state) => state.user)
     const navigate = useNavigate()
+    const dispatch = useDispatch()
 
     const [nameEdition,setNameEditing] = useState(true)
     const [urlLongEdition,setUrlLongEditing] = useState(true)
@@ -77,11 +79,22 @@ function UrlData() {
         })
         .catch(error => {        
         });
-
     }
 
-    useEffect(() => {        
-        getInfoUrl(400)
+    useEffect(() => {     
+        const status = checkToken(user.time, dispatch)
+        if(!status){
+            getInfoUrl(400)
+        }else{
+            toast.error("The session has expired", {duration:1000})  
+
+            setTimeout(() =>{
+                navigate('/')
+            },1500)
+            
+        }
+        
+
     },[])
 
     const handleNameEditing = () => {        

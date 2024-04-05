@@ -34,8 +34,12 @@ function Login() {
             const data = {email:email,password:pass}
             
             await axios.post(import.meta.env.VITE_APIHOST+'/user/login', data)
-            .then(response => {                                                           
-                dispatch(addUser(response.data))
+            .then(response => {                                
+                const data = {
+                    ...response.data,
+                    time:new Date() 
+                }                           
+                dispatch(addUser(data))
                 saveUser()
                 navigate('/')
             })
