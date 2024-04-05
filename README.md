@@ -13,4 +13,4 @@ Sections:
 BackEnd made node js and Express
   link: https://github.com/raulalvarezids/url-shortener-api
 
-link deploy: 
+link deploy: https://free-url-shortener-personal.netlify.app
